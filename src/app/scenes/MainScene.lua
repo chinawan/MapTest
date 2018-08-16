@@ -5,28 +5,24 @@ end)
 
 function MainScene:ctor()
     self.map = cc.TMXTiledMap:create("map.tmx")
-		:align(display.BOTTOM_LEFT, display.left, display.bottom)
-		:addTo(self)
+	:align(display.BOTTOM_LEFT, display.left, display.bottom):setAnchorPoint(cc.p(0,0))
+	:addTo(self)
 	self.layer = display.newLayer()
     self.layer:addNodeEventListener(cc.KEYPAD_EVENT,handler(self,self.testKeypad))
     self:addChild(self.layer)
     self.layer:setKeypadEnabled(true)
-
 	self.player = display.newSprite("player.png"):addTo(self,2):pos(display.cx,display.cy):setAnchorPoint(cc.p(0,0))
 	self:loadMap()
-	
 end
 
 function MainScene:loadMap()
 	local players = self.map:getObjectGroup("players")
 	local startPoint = players:getObject('startPoint')
     local endPoint = players:getObject('endPoint')
-    local startPos = cc.p(startPoint.x, startPoint.y)
-
-    local endPos = cc.p(endPoint.x, endPoint.y)
+    local startPos = cc.p(startPoint.x, self:getContentSize().height-startPoint.y-32)
+    local endPos = cc.p(endPoint.x, self:getContentSize().height - endPoint.y-65)
     self.barriers = self.map:getLayer('barriers')
     self.stars = self.map:getLayer('stars')
-    self:getTilePos(startPos)
     self.playerTile = self:getTilePos(startPos);
     self.endTile = self:getTilePos(endPos);
     self:updatePlayerPos()
@@ -34,10 +30,8 @@ end
 
 function MainScene:updatePlayerPos()
 	local pos = self.barriers:getPositionAt(self.playerTile)
-	dump(pos)
     self.player:setPosition(pos)
 end
-
 
 function MainScene:testKeypad(event)
 	local  newTile = cc.p(self.playerTile.x, self.playerTile.y)
@@ -64,18 +58,14 @@ function MainScene:tryMoveToNewTile(newTile)
         print('This way is blocked!')
         return false;
     end
-
     self:tryCatchStar(newTile)
-
     self.playerTile = newTile
     self:updatePlayerPos()
 
     if self.playerTile.x == self.endTile.x and self.playerTile.y == self.endTile.y then
-    	print("succed")
+    	print("------------------succed-------------")
    	end
-    
 end
-
 
 function MainScene:getTilePos(posInPixel) 
     local  mapSize = self:getContentSize()
@@ -88,7 +78,6 @@ function MainScene:getTilePos(posInPixel)
 function  MainScene:tryCatchStar(newTile)
     local GID = self.stars:getTileGIDAt(newTile);
     local prop = self.map:getPropertiesForGID(GID);
-
     if self.stars:getTileGIDAt(newTile) ~= 0 then
         self.stars:removeTileAt(newTile)
     end

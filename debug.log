@@ -6,7 +6,7 @@ Quick-Cocos2dx-Community C++ support ready.
 
 ------------------------------------------------
 
-LOAD LUA FILE: D:/workspace/MapTest/src/main.lua
+LOAD LUA FILE: D:/workspace/TestMap/src/main.lua
 
 ------------------------------------------------
 
@@ -28,7 +28,7 @@ LOAD LUA FILE: D:/workspace/MapTest/src/main.lua
 
 [LUA-print] [INFO] # device.language              = cn
 
-[LUA-print] [INFO] # device.writablePath          = D:\workspace\MapTest\
+[LUA-print] [INFO] # device.writablePath          = D:\workspace\TestMap\
 
 [LUA-print] [INFO] # device.directorySeparator    = \
 
@@ -38,39 +38,387 @@ LOAD LUA FILE: D:/workspace/MapTest/src/main.lua
 
 [LUA-print] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_HEIGHT
 
-[LUA-print] [INFO] # CONFIG_SCREEN_WIDTH          = 960.00
+[LUA-print] [INFO] # CONFIG_SCREEN_WIDTH          = 1136.00
 
 [LUA-print] [INFO] # CONFIG_SCREEN_HEIGHT         = 640.00
 
-[LUA-print] [INFO] # display.widthInPixels        = 960.00
+[LUA-print] [INFO] # display.widthInPixels        = 1136.00
 
 [LUA-print] [INFO] # display.heightInPixels       = 640.00
 
 [LUA-print] [INFO] # display.contentScaleFactor   = 1.00
 
-[LUA-print] [INFO] # display.width                = 960.00
+[LUA-print] [INFO] # display.width                = 1136.00
 
 [LUA-print] [INFO] # display.height               = 640.00
 
-[LUA-print] [INFO] # display.cx                   = 480.00
+[LUA-print] [INFO] # display.cx                   = 568.00
 
 [LUA-print] [INFO] # display.cy                   = 320.00
 
 [LUA-print] [INFO] # display.left                 = 0.00
 
-[LUA-print] [INFO] # display.right                = 960.00
+[LUA-print] [INFO] # display.right                = 1136.00
 
 [LUA-print] [INFO] # display.top                  = 640.00
 
 [LUA-print] [INFO] # display.bottom               = 0.00
 
-[LUA-print] [INFO] # display.c_left               = -480.00
+[LUA-print] [INFO] # display.c_left               = -568.00
 
-[LUA-print] [INFO] # display.c_right              = 480.00
+[LUA-print] [INFO] # display.c_right              = 568.00
 
 [LUA-print] [INFO] # display.c_top                = 320.00
 
 [LUA-print] [INFO] # display.c_bottom             = -320.00
 
 [LUA-print] [INFO] #
+
+cocos2d: SpriteBatchNode: resizing TextureAtlas capacity from [281] to [376].
+
+cocos2d: SpriteBatchNode: resizing TextureAtlas capacity from [376] to [502].
+
+cocos2d: SpriteBatchNode: resizing TextureAtlas capacity from [502] to [670].
+
+cocos2d: SpriteBatchNode: resizing TextureAtlas capacity from [670] to [894].
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:34: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 5
+
+[LUA-print] -     "y" = 13
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:36: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 160
+
+[LUA-print] -     "y" = 192
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:34: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 6
+
+[LUA-print] -     "y" = 13
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:36: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 192
+
+[LUA-print] -     "y" = 192
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:34: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 7
+
+[LUA-print] -     "y" = 13
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:36: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 224
+
+[LUA-print] -     "y" = 192
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:34: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 8
+
+[LUA-print] -     "y" = 13
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:36: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 256
+
+[LUA-print] -     "y" = 192
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:34: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 8
+
+[LUA-print] -     "y" = 12
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:36: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 256
+
+[LUA-print] -     "y" = 224
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:34: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 8
+
+[LUA-print] -     "y" = 11
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:36: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 256
+
+[LUA-print] -     "y" = 256
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:34: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 8
+
+[LUA-print] -     "y" = 10
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:36: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 256
+
+[LUA-print] -     "y" = 288
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:34: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 8
+
+[LUA-print] -     "y" = 9
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:36: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 256
+
+[LUA-print] -     "y" = 320
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:34: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 8
+
+[LUA-print] -     "y" = 8
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:36: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 256
+
+[LUA-print] -     "y" = 352
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:34: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 8
+
+[LUA-print] -     "y" = 7
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:36: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 256
+
+[LUA-print] -     "y" = 384
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:34: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 8
+
+[LUA-print] -     "y" = 6
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:36: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 256
+
+[LUA-print] -     "y" = 416
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:34: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 8
+
+[LUA-print] -     "y" = 5
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:36: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 256
+
+[LUA-print] -     "y" = 448
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:34: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 8
+
+[LUA-print] -     "y" = 4
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:36: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 256
+
+[LUA-print] -     "y" = 480
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:34: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 8
+
+[LUA-print] -     "y" = 3
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:36: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 256
+
+[LUA-print] -     "y" = 512
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:34: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 8
+
+[LUA-print] -     "y" = 2
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:36: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 256
+
+[LUA-print] -     "y" = 544
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:34: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 8
+
+[LUA-print] -     "y" = 1
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:36: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 256
+
+[LUA-print] -     "y" = 576
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:34: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 8
+
+[LUA-print] -     "y" = 0
+
+[LUA-print] - }
+
+[LUA-print] dump from: [string "D:/workspace/TestMap/src/app/scenes/MainScene.lua"]:36: in function 'updatePlayerPos'
+
+[LUA-print] - "<var>" = {
+
+[LUA-print] -     "x" = 256
+
+[LUA-print] -     "y" = 608
+
+[LUA-print] - }
 
