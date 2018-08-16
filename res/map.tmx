@@ -18,12 +18,15 @@
  <tileset firstgid="41" name="Am" tilewidth="32" tileheight="32">
   <image source="Am.png" width="32" height="32"/>
  </tileset>
+ <tileset firstgid="42" name="attack" tilewidth="32" tileheight="32">
+  <image source="attack.png" width="32" height="32"/>
+ </tileset>
  <layer name="ground" width="40" height="20">
   <properties>
    <property name="isObstacle" value="false"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztzjENAAAIA7B5Ifi3iA0CPfq3kzTv1YIDAAD3DbEtc58=
+   eJztzjENAAAIA7AFK/j3iA0CPfq3khTv9YIDAAD3DYTQBmI=
   </data>
  </layer>
  <layer name="barriers" width="40" height="20">
@@ -39,12 +42,21 @@
    <property name="isStar" value="true"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo4CBQXmgHTAKRsEoGAWjYBQMc6BOZXWjYBQMVQAAYpYAcg==
+   eJxjYBgFIxGoD7QDRsEoGAWjYBSMghEGiK17R+voUTDcAQCO5gB2
+  </data>
+ </layer>
+ <layer name="attack" width="40" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUkAO0BtoBo2DEg9E0OApGwSigFcBWvoyWOaOAWgAAcY0AqQ==
   </data>
  </layer>
  <objectgroup name="players">
-  <object name="endPoint" gid="38" x="322" y="160" width="32" height="32"/>
-  <object name="startPoint" gid="38" x="97" y="34" width="32" height="32"/>
+  <properties>
+   <property name="attack" value="15"/>
+   <property name="life" value="500"/>
+  </properties>
+  <object name="endPoint" gid="38" x="335" y="114" width="32" height="32"/>
+  <object name="startPoint" gid="38" x="96" y="24" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="NPC">
   <object name="NPC1" gid="40" x="61" y="131">
@@ -60,6 +72,36 @@
   <object name="NPC3" gid="40" x="383" y="288">
    <properties>
     <property name="index" value="3"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Enemy">
+  <properties>
+   <property name="attack" value="10"/>
+   <property name="life" value="100"/>
+  </properties>
+  <object name="EM1" gid="41" x="172" y="230">
+   <properties>
+    <property name="attack" value="10"/>
+    <property name="life" value="100"/>
+   </properties>
+  </object>
+  <object name="EM2" gid="41" x="109" y="327">
+   <properties>
+    <property name="attak" value="10"/>
+    <property name="life" value="100"/>
+   </properties>
+  </object>
+  <object name="EM3" gid="41" x="253" y="447">
+   <properties>
+    <property name="attack" value="10"/>
+    <property name="life" value="100"/>
+   </properties>
+  </object>
+  <object name="Boss" gid="41" x="318" y="292">
+   <properties>
+    <property name="attack" value="20"/>
+    <property name="life" value="200"/>
    </properties>
   </object>
  </objectgroup>
