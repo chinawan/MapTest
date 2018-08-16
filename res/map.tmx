@@ -12,6 +12,12 @@
  <tileset firstgid="39" name="star" tilewidth="32" tileheight="32">
   <image source="star.png" width="32" height="32"/>
  </tileset>
+ <tileset firstgid="40" name="Npc" tilewidth="32" tileheight="32">
+  <image source="Npc.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="41" name="Am" tilewidth="32" tileheight="32">
+  <image source="Am.png" width="32" height="32"/>
+ </tileset>
  <layer name="ground" width="40" height="20">
   <properties>
    <property name="isObstacle" value="false"/>
@@ -38,6 +44,23 @@
  </layer>
  <objectgroup name="players">
   <object name="endPoint" gid="38" x="322" y="160" width="32" height="32"/>
-  <object name="startPoint" gid="38" x="320" y="290" width="32" height="32"/>
+  <object name="startPoint" gid="38" x="97" y="34" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="NPC">
+  <object name="NPC1" gid="40" x="61" y="131">
+   <properties>
+    <property name="index" value="1"/>
+   </properties>
+  </object>
+  <object name="NPC2" gid="40" x="223" y="385">
+   <properties>
+    <property name="index" value="2"/>
+   </properties>
+  </object>
+  <object name="NPC3" gid="40" x="383" y="288">
+   <properties>
+    <property name="index" value="3"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>
