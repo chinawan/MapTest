@@ -74,22 +74,9 @@ function MainScene:tryMoveToNewTile(newTile)
     
     self:tryCatchStar(newTile)
     self.playerTile = newTile
-    self:updatePlayerPos()
-    print(self.player:getPositionX(),self.player:getPositionY())
-    for k,v in pairs(self.NpcList) do
-        if math.abs(self.player:getPositionX() - v:getPositionX()) ==0 and math.abs(self.player:getPositionY() - v:getPositionY()) ==0 then
-            if v:getName() == 'NPC1' then
-                self:talkNpc(1)
-            elseif v:getName() == 'NPC2' then
-                self:talkNpc(2)
-            elseif v:getName() == 'NPC3' then
-                self:talkNpc(3)
-            end
-        end
-    end
-    if self.playerTile.x == self.endTile.x and self.playerTile.y == self.endTile.y then
-    	print("------------------succed-------------")
-   	end
+    
+    self:talkNpc()
+    self:isEnd()
 end
 
 function MainScene:getTilePos(posInPixel) 
@@ -108,8 +95,31 @@ function  MainScene:tryCatchStar(newTile)
     end
 end
 
-function MainScene:talkNpc(index)
-    print("talk--------",index)
+function MainScene:isEnd()
+    if self.playerTile.x == self.endTile.x and self.playerTile.y == self.endTile.y then
+        print("------------------succed-------------")
+    end
+end
+
+function MainScene:talkNpc()
+    print(self.player:getPositionX(),self.player:getPositionY())
+    for k,v in pairs(self.NpcList) do
+        if (math.abs(self.player:getPositionX() - v:getPositionX()) ==32 and self.player:getPositionY() == v:getPositionY()) or
+        (math.abs(self.player:getPositionY() - v:getPositionY()) ==32 and self.player:getPositionX() == v:getPositionX()) then
+            if v:getName() == 'NPC1' then
+                print("--------1---------")
+                return false
+            elseif v:getName() == 'NPC2' then
+                print("--------2---------")
+                return false
+            elseif v:getName() == 'NPC3' then
+                print("--------3---------")
+                return false
+            end
+        end
+    end
+    self:updatePlayerPos()
+
 end
 
 function MainScene:onEnter()
